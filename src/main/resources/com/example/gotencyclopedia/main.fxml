@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="547.0" prefWidth="599.0" style="-fx-background-color: #8a8484;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gotencyclopedia.Controller">
+   <children>
+      <ImageView fx:id="characterImageView" fitHeight="168.0" fitWidth="269.0" layoutX="232.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+      <MFXButton fx:id="nextButton" buttonType="RAISED" depthLevel="LEVEL3" layoutX="312.0" layoutY="482.0" onAction="#loadNextCharacter" prefHeight="29.0" prefWidth="84.0" style="-fx-background-color: #b51d1d;" text="Next" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></MFXButton>
+      <MFXButton fx:id="previousButton" buttonType="RAISED" depthLevel="LEVEL3" layoutX="193.0" layoutY="482.0" onAction="#loadPreviousCharacter" prefHeight="29.0" prefWidth="84.0" style="-fx-background-color: #b51d1d;" text="Previous" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></MFXButton>
+      <Text fx:id="fullNameText" layoutX="308.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Text>
+      <Text fx:id="titleText" layoutX="308.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Text>
+      <Text fx:id="houseText" layoutX="308.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Text>
+      <Label fx:id="fullNameLabel" layoutX="191.0" layoutY="325.0" text="Full Name:">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Label>
+      <Label fx:id="titleLabel" layoutX="193.0" layoutY="358.0" text="Title:">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Label>
+      <Label fx:id="houseLabel" layoutX="193.0" layoutY="403.0" text="House:">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Label>
+      <Label layoutX="193.0" layoutY="62.0" text="GOT Encyclopedia">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
